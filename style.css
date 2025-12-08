@@ -552,3 +552,86 @@ section {
 .cert-icon i {
   font-size: 5rem;
 }
+
+/* Tablets and medium screens */
+@media (max-width: 768px) {
+  section {
+    padding: 8rem 8%;
+  }
+
+  .heading {
+    font-size: 4.5rem;
+    margin: 3rem 0;
+  }
+
+  /* Make projects & certifications 1 per row */
+  .projects-box,
+  .certifications-box {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .cert-card {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  /* Slightly smaller text */
+  .project-card h3,
+  .cert-card h3 {
+    font-size: 2.4rem;
+  }
+
+  .project-card p,
+  .cert-card p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%; /* slightly smaller global scale */
+  }
+
+  .header {
+    padding: 2rem 8%;
+  }
+
+  .home {
+    gap: 3rem;
+  }
+
+  .home-content h1 {
+    font-size: 4.2rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.4rem;
+  }
+
+  .home-img img,
+  .about-img img {
+    width: 70vw;
+  }
+
+  .cert-card,
+  .project-card {
+    padding: 2.8rem 1.6rem;
+    border-radius: 2.4rem;
+  }
+
+  .cert-card h3 {
+    font-size: 2.1rem;
+  }
+
+  .cert-card p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .btn {
+    padding: 0.9rem 2.4rem;
+    font-size: 1.6rem;
+  }
+}
