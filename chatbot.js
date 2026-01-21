@@ -172,7 +172,7 @@ Chatbot.addIntent({
   triggers: ["contact", "email"],
   examples: ["contact", "email"],
   response:
-    "Email: mrvisheshmalik8@gmail.com\n" +
+    "Email: visheshmalik.dev@gmail.com\n" +
     "LinkedIn and GitHub are available on the portfolio."
 });
 
