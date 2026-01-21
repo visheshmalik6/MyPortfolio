@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Vishesh Malik - Computer Science Undergraduate & Full Stack Developer specializing in React.js, Python, Java, and scalable web applications.">
+<title>Vishesh Malik | Full Stack Developer</title>
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+<!-- COVER PAGE -->
+<div id="coverPage">
+    <!-- Canvas for particles -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Background effects -->
+    <div class="gradient-mesh"></div>
+    <div class="grid-bg"></div>
+    
+    <!-- Floating shapes -->
+    <div class="float-elements">
+      <div class="float-shape shape1"></div>
+      <div class="float-shape shape2"></div>
+      <div class="float-shape shape3"></div>
+    </div>
+
+    <!-- Main content -->
+    <div class="cover-container">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span>Open to Software Engineering Internships</span>
+      </div>
+
+      <h1 class="cover-name">
+        <div class="name-wrapper">
+          <span class="name-gradient" data-text="Vishesh Malik">Vishesh Malik</span>
+        </div>
+      </h1>
+
+      <p class="cover-subtitle">Full Stack Developer & Computer Science Undergraduate</p>
+      
+      <p class="cover-tagline">
+        Building scalable, user-focused web applications through clean code, thoughtful design, and modern technologies.
+      </p>
+
+      <div class="loading-section">
+        <div class="progress-stats">
+          <span class="loading-text loading-dots">Initializing</span>
+          <span class="loading-percentage">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-icon"></div>
+    </div>
+  </div>
+
+  <!-- Main Content
+  <div class="main-content">
+    <div class="portfolio-preview">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Explore my work, skills, and journey as a creative developer passionate about building exceptional digital experiences.</p>
+    </div>
+  </div> -->
+
+
+
+
+  
+<!-- LOADING OVERLAY -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loader"></div>
+  <p class="loading-text">LOADING</p>
+</div>
+
+<header class="header" id="header">
+  <a class="logo" href="#home">Vishesh<span>Malik</span></a>
+  <i class="bx bx-menu" id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills-section">Skills & Work</a>
+    <a href="#education-section">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact"><button class="cta-btn"><span>Get In Touch</span></button></a>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-label">💻 Aspiring Software Engineer | Full Stack Developer</div>
+    <h1>Vishesh Malik</h1>
+    <h2>I'm a <span class="typed-text"></span></h2>
+    <p>Computer Science undergraduate with a strong foundation in Data Structures and Algorithms using Java, and hands-on experience building scalable web applications with React.js and Python. Passionate about transforming complex problems into efficient, real-world software solutions.</p>
+    
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">6+</span>
+        <span class="stat-label">Technical Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Industry Certifications</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Dedication</span>
+      </div>
+    </div>
+    
+    <div class="social-links">
+      <a href="https://github.com/visheshmalik6" class="social-link" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+      <a href="https://linkedin.com/in/vishesh-malik6" class="social-link" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+      <a href="mailto:mrvisheshmalik8@gmail.com" class="social-link"><i class="bx bx-envelope"></i></a>
+    </div>
+    
+    <div class="btn-group">
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+      <a href="#skills-section" class="btn btn-secondary">Explore Projects</a>
+    </div>
+  </div>
+  
+  <div class="hero-img">
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="hero-img-wrapper">
+      <img src="me.jpg" alt="Vishesh Malik">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-subtitle">Passionate developer focused on creating impactful solutions</p>
+  
+  <div class="about-container reveal">
+    <div class="about-img-wrapper">
+      <img src="me2.png" alt="About Vishesh Malik" class="about-img">
+    </div>
+    
+    <div class="about-content">
+      <h2>Computer Science Undergraduate & Aspiring Software Engineer</h2>
+      <p>I am a Computer Science undergraduate at IIMT University, Meerut, with a strong academic and practical foundation in Data Structures, Algorithms, and Object-Oriented Programming using Java. I specialize in frontend development with React.js and backend logic using Python, focusing on performance, scalability, and maintainability.</p>
+      <p>I have hands-on experience developing full-stack web applications, AI-integrated systems, and responsive user interfaces. My work includes e-commerce platforms, computer vision applications, and IoT-based systems, where I collaborate effectively in team-driven environments and follow best development practices.</p>
+      <p>I am currently seeking Software Engineering Internship opportunities where I can apply my technical skills, contribute to meaningful projects, and grow as a professional developer in a real-world engineering environment.</p>
+      
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <i class="bx bx-code-alt"></i>
+          <h4>Clean Code</h4>
+          <p>Writing scalable, readable, and maintainable software</p>
+        </div>
+        <div class="highlight-item">
+          <i class="bx bx-rocket"></i>
+          <h4>Fast Learner</h4>
+          <p>Quickly adapting to new tools and technologies</p>
+        </div>
+        <div class="highlight-item">
+          <i class="bx bx-group"></i>
+          <h4>Team Player</h4>
+          <p>Effective collaboration in cross-functional teams</p>
+        </div>
+        <div class="highlight-item">
+          <i class="bx bx-bulb"></i>
+          <h4>Problem Solver</h4>
+          <p>Strong algorithmic and analytical thinking</p>
+        </div>
+      </div>
+      
+      <a href="https://drive.google.com/file/d/1SJCkCA-WFhayfP6aHMIi_Mo-rKOqn1Bd/view?usp=sharing" class="btn btn-primary" style="margin-top:2rem">Read More </a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS & WORK SECTION -->
+<section class="section-toggles" id="skills-section">
+  <h2 class="section-title">Skills & Work Experience</h2>
+  <p class="section-subtitle">A snapshot of my technical skill set and hands-on experience</p>
+  
+  <div class="toggle-container reveal">
+    <div class="toggle-group">
+      <button class="toggle-btn active" data-toggle="techstack">Tech Stack</button>
+      <button class="toggle-btn" data-toggle="projects">Projects</button>
+      <button class="toggle-btn" data-toggle="experience">Experience</button>
+    </div>
+  </div>
+  
+  <!-- TECH STACK CONTENT -->
+  <div class="toggle-content active" id="techstack">
+    <div class="tech-grid reveal">
+      <div class="tech-item"><i class="bx bxl-java"></i><h4>Java</h4></div>
+      <div class="tech-item"><i class="bx bxl-python"></i><h4>Python</h4></div>
+      <div class="tech-item"><i class="bx bxl-javascript"></i><h4>JavaScript</h4></div>
+      <div class="tech-item"><i class="bx bxl-react"></i><h4>React.js</h4></div>
+      <div class="tech-item"><i class="bx bxl-nodejs"></i><h4>Node.js</h4></div>
+      <div class="tech-item"><i class="bx bxl-html5"></i><h4>HTML5</h4></div>
+      <div class="tech-item"><i class="bx bxl-css3"></i><h4>CSS3</h4></div>
+      <div class="tech-item"><i class="bx bxl-git"></i><h4>Git</h4></div>
+      <div class="tech-item"><i class="bx bxl-github"></i><h4>GitHub</h4></div>
+      <div class="tech-item"><i class="bx bxl-firebase"></i><h4>Firebase</h4></div>
+      <div class="tech-item"><i class="bx bx-data"></i><h4>MySQL</h4></div>
+      <div class="tech-item"><i class="bx bxl-figma"></i><h4>Figma</h4></div>
+    </div>
+  </div>
+  
+  <!-- PROJECTS CONTENT -->
+  <div class="toggle-content" id="projects">
+    <div class="projects-grid reveal">
+      <div class="project-card" data-project="ecommerce">
+        <div class="project-icon"><i class="bx bx-shopping-bag"></i></div>
+        <h3>E-commerce Platform</h3>
+        <p>Designed and developed a high-performance React.js frontend with reusable components and efficient state management. Implemented dynamic product listings, advanced search and filtering, and a persistent shopping cart integrated with RESTful APIs.</p>
+        <div class="project-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">REST API</span>
+          <span class="tag">State Management</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-details-btn" onclick="openProjectModal('ecommerce')">
+            View Details <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="project-card" data-project="webclones">
+        <div class="project-icon"><i class="bx bx-desktop"></i></div>
+        <h3>Interactive Web Clones</h3>
+        <p>Created pixel-perfect interactive web application clones to master advanced JavaScript concepts, DOM manipulation, and event-driven architecture. Applied mobile-first design principles for cross-device compatibility.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">Responsive</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-details-btn" onclick="openProjectModal('webclones')">
+            View Details <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="project-card" data-project="facerecognition">
+        <div class="project-icon"><i class="bx bx-face"></i></div>
+        <h3>Face Recognition App</h3>
+        <p>Built an end-to-end face recognition system using Python and computer vision libraries. Enabled real-time facial detection and landmark recognition with high accuracy.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">ML</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-details-btn" onclick="openProjectModal('facerecognition')">
+            View Details <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="project-card" data-project="iotaquarium">
+        <div class="project-icon"><i class="bx bx-chip"></i></div>
+        <h3>IoT Smart Aquarium</h3>
+        <p>Engineered an IoT-based monitoring system using sensors and Python scripting to track environmental conditions and automate maintenance processes, significantly reducing manual intervention.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">IoT</span>
+          <span class="tag">Embedded Systems</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-details-btn" onclick="openProjectModal('iotaquarium')">
+            View Details <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- EXPERIENCE CONTENT -->
+<div class="toggle-content" id="experience">
+  <div class="experience-timeline reveal">
+
+    <div class="experience-item">
+      <div class="experience-dot"></div>
+      <div class="experience-content">
+        <span class="experience-date">2025 – Present</span>
+        <h3>Vice President – Innovation Club (Avishkaar)</h3>
+        <p class="experience-company">Avishkaar Innovation Club, IIMT University</p>
+        <p>
+          Serving as Vice President of Avishkaar, the university’s innovation and technology club, where I lead technical initiatives, mentor students, and drive innovation-focused projects. I oversee planning and execution of hackathons, ideathons, and technical workshops, while fostering a collaborative environment that encourages problem-solving, creativity, and practical application of technology.
+        </p>
+        <div class="experience-skills">
+          <span class="experience-skill">Leadership & Team Management</span>
+          <span class="experience-skill">Technical Mentorship</span>
+          <span class="experience-skill">Event & Hackathon Organization</span>
+          <span class="experience-skill">Innovation & Problem Solving</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-dot"></div>
+      <div class="experience-content">
+        <span class="experience-date">2025 – Present</span>
+        <h3>Client Website Development – Freelance Project</h3>
+        <p class="experience-company">Frontend Developer | Client-Based Project</p>
+        <p>
+         Currently developing a production-ready client website focused on showcasing products through a clean, responsive, and user-friendly interface. Responsible for translating client requirements into a functional web solution, implementing modern UI design, optimizing performance, and ensuring cross-device compatibility.
+        </p>
+        <div class="experience-skills">
+          <span class="experience-skill">Client Requirement Analysis</span>
+          <span class="experience-skill">Responsive Web Development</span>
+          <span class="experience-skill">UI Implementation</span>
+          <span class="experience-skill">Performance Optimization</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-dot"></div>
+      <div class="experience-content">
+        <span class="experience-date">2023 – Present</span>
+        <h3>Team-Based Technical Projects</h3>
+        <p class="experience-company">Academic & Personal Projects</p>
+        <p>
+          Actively led and contributed to multiple academic and personal software projects, collaborating across frontend and backend development. Involved in architecture planning, feature implementation, version control, and code reviews while following structured development workflows and best engineering practices.
+        </p>
+        <div class="experience-skills">
+          <span class="experience-skill">Full Stack Collaboration</span>
+          <span class="experience-skill">Project Coordination</span>
+          <span class="experience-skill">Git & Version Control</span>
+          <span class="experience-skill">Agile Development Practices</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- EDUCATION & CERTIFICATIONS SECTION -->
+<section class="section-toggles" id="education-section">
+  <h2 class="section-title">Education & Certifications</h2>
+  <p class="section-subtitle">My academic background and professional development</p>
+  
+  <div class="toggle-container reveal">
+    <div class="toggle-group">
+      <button class="toggle-btn active" data-toggle="education">Education</button>
+      <button class="toggle-btn" data-toggle="certifications">Certifications</button>
+    </div>
+  </div>
+  
+  <!-- EDUCATION CONTENT -->
+  <div class="toggle-content active" id="education">
+    <div class="education-grid reveal">
+      <div class="education-card">
+        <i class="bx bxs-graduation education-icon"></i>
+        <h3>B.Tech in Computer Science</h3>
+        <p class="education-institution">IIMT University, Meerut</p>
+        <span class="education-date">2022 - 2026</span>
+        <p>Coursework focused on core computer science subjects including Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering, with strong emphasis on practical implementation through projects.</p>
+      </div>
+      
+      <div class="education-card">
+        <i class="bx bxs-book-alt education-icon"></i>
+        <h3>Senior Secondary (12th)</h3>
+        <p class="education-institution">Previous Institution</p>
+        <span class="education-date">2022</span>
+        <p>Completed senior secondary education with a focus on Mathematics, Physics, and Computer Science, building a strong analytical and logical foundation.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- CERTIFICATIONS CONTENT -->
+  <div class="toggle-content" id="certifications">
+    <div class="cert-grid reveal">
+      <div class="cert-card">
+        <i class="bx bx-certification cert-icon"></i>
+        <h3>Oracle Cloud Infrastructure Foundations</h3>
+        <p class="issuer">Oracle</p>
+        <p>Validated understanding of cloud computing concepts, OCI services, and deployment fundamentals.</p>
+        <span class="cert-date">2025</span>
+        <div class="cert-actions">
+          <button class="view-cert-btn" onclick="openCertModal('oracle')">
+            View Certificate <i class="bx bx-show"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="cert-card">
+        <i class="bx bx-briefcase cert-icon"></i>
+        <h3>McKinsey Forward Program</h3>
+        <p class="issuer">McKinsey & Company</p>
+        <p>Professional readiness program focused on structured problem-solving, strategic thinking, and workplace skills.</p>
+        <span class="cert-date">Ongoing</span>
+        <div class="cert-actions">
+          <button class="view-cert-btn" onclick="openCertModal('mckinsey')">
+            View Certificate <i class="bx bx-show"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="cert-card">
+        <i class="bx bx-code-block cert-icon"></i>
+        <h3>Face Recognition Using Python</h3>
+        <p class="issuer">GUVI</p>
+        <p>Practical certification focused on computer vision, facial detection, and real-world Python implementations.</p>
+        <span class="cert-date">ID: 6qzRO956068012811t</span>
+        <div class="cert-actions">
+          <button class="view-cert-btn" onclick="openCertModal('facerecog')">
+            View Certificate <i class="bx bx-show"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="cert-card">
+        <i class="bx bx-palette cert-icon"></i>
+        <h3>UI/UX Design Certification</h3>
+        <p class="issuer">Simplilearn</p>
+        <p>Training in user-centric design principles, wireframing, prototyping, and usability best practices.</p>
+        <span class="cert-date">2025</span>
+        <div class="cert-actions">
+          <button class="view-cert-btn" onclick="openCertModal('uiux')">
+            View Certificate <i class="bx bx-show"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-subtitle">Open to internships, collaborations, and meaningful technical discussions</p>
+  
+  <div class="contact-container">
+    <div class="contact-info reveal">
+      <div class="info-box">
+        <i class="bx bx-map"></i>
+        <h4>Location</h4>
+        <p>East Delhi, Delhi-110092<br>India</p>
+      </div>
+      
+      <div class="info-box">
+        <i class="bx bx-envelope"></i>
+        <h4>Email</h4>
+        <p><a href="mailto:mrvisheshmalik8@gmail.com">mrvisheshmalik8@gmail.com</a></p>
+      </div>
+      
+      <div class="info-box">
+        <i class="bx bxl-linkedin"></i>
+        <h4>LinkedIn</h4>
+        <p><a href="https://linkedin.com" target="_blank" rel="noopener">Connect with me</a></p>
+      </div>
+    </div>
+    
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name *</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email *</label>
+          <input type="email" id="email" placeholder="john@example.com" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+91 1234567890">
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <input type="text" id="subject" placeholder="Project Discussion" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message *</label>
+        <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3 class="footer-logo">Vishesh<span>Malik</span></h3>
+    
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills-section">Skills & Work</a>
+      <a href="#education-section">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://github.com/visheshmalik6" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+      <a href="https://linkedin.com/in/vishesh-malik6" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+      <a href="mailto:mrvisheshmalik8@gmail.com"><i class="bx bx-envelope"></i></a>
+    </div>
+    
+    <p>© 2024 <span>Vishesh Malik</span>. All Rights Reserved.</p>
+    <p style="margin-top:1rem">Designed and developed with a focus on performance, clarity, and real-world impact</p>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP BUTTON -->
+<div id="scroll-top">
+  <i class="bx bx-up-arrow-alt"></i>
+</div>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-title-section" id="modalTitleSection"></div>
+      <button class="modal-close" onclick="closeModal('projectModal')">
+        <i class="bx bx-x"></i>
+      </button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-footer" id="modalFooter"></div>
+  </div>
+</div>
+
+<!-- CERTIFICATE MODAL -->
+<div class="modal" id="certModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-title-section" id="certModalTitle"></div>
+      <button class="modal-close" onclick="closeModal('certModal')">
+        <i class="bx bx-x"></i>
+      </button>
+    </div>
+    <div class="modal-body" id="certModalBody"></div>
+    <div class="modal-footer" id="certModalFooter"></div>
+  </div>
+</div>
+<!-- Chat Open Button -->
+    <button id="open-chat-btn" aria-label="Open chat">
+    💬 Chat
+    </button>
+    <!-- Portfolio Chatbot -->
+    <div id="chatbot-widget" class="hidden">
+
+        <div class="chatbot-header">
+            Ask about me
+            <span id="close-chat-btn">&times;</span>
+        </div>
+
+        <div id="chatbot-messages">
+            <div class="chatbot-msg bot">
+            Hi! You can ask me about my skills, projects, or education.
+            </div>
+        </div>
+
+        <div class="chatbot-input">
+            <input
+            id="chatbot-input"
+            type="text"
+            placeholder="Ask about skills, projects..."
+            autocomplete="off"
+            />
+            <button id="chatbot-send">Send</button>
+        </div>
+
+    </div>
+
+<!-- Add before your closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
