@@ -2,6 +2,41 @@
 // PROJECT DATA (ONLY FROM RESUME + PORTFOLIO)
 // =====================================
 const projectsData = {
+    cinescope: {
+    title: "CineScope - Full-Stack Movie Discovery App",
+    icon: "bx-film",
+    description: "Full-stack movie discovery platform with secure authentication, personalized favorites, and real-time movie data.",
+    fullDescription: "CineScope is a full-stack movie discovery platform built with React.js and Firebase. It integrates the TMDB API to fetch real-time movie data, allowing users to explore trending movies, search titles, view detailed information, and discover where movies are legally available to watch. The application includes secure authentication, cloud-synced user favorites, and a clean, responsive user interface designed for a smooth browsing experience.",
+    features: [
+      "User authentication with login and registration using Firebase Authentication",
+      "Browse trending and popular movies with real-time data",
+      "Search movies by title with optimized query handling",
+      "Interactive movie detail view with ratings, overview, and release information",
+      "Personalized favorites stored securely in Firebase Firestore",
+      "Cloud-synced user data with persistence across sessions",
+      "Protected routes to restrict access to authenticated users",
+      "Environment-based configuration for secure API key management",
+      "Responsive layout optimized for desktop and tablet devices"
+    ],
+    technologies: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "Firebase Authentication",
+      "Firebase Firestore",
+      "TMDB REST API",
+      "Vite",
+      "HTML5",
+      "CSS3",
+      "Git",
+      "Vercel"
+    ],
+    challenges: "Designing a secure authentication flow and managing user-specific data while maintaining performance and clean state management across the application.",
+    outcome: "Gained hands-on experience building and deploying a production-ready full-stack application with authentication, cloud database integration, and real-world API consumption.",
+    links: {
+      github: "https://github.com/visheshmalik6/CineScope",
+      liveDemo: "https://cine-scope-peach.vercel.app/"
+    }
+  },
   ecommerce: {
     title: "E-commerce Platform",
     icon: "bx-shopping-bag",
@@ -884,5 +919,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
 
