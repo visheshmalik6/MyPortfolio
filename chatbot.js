@@ -1,5 +1,5 @@
 /* =========================
-   CHATBOT CORE (v2.1)
+   CHATBOT CORE (v3.0)
 ========================= */
 
 const Chatbot = {
@@ -29,7 +29,7 @@ const Chatbot = {
       return this.listCommands();
     }
 
-    // INTENT MATCHING (word-safe)
+    // INTENT MATCHING
     for (const intent of this.intents) {
       for (const trigger of intent.triggers) {
         const pattern = new RegExp(`\\b${trigger}\\b`, "i");
@@ -42,7 +42,8 @@ const Chatbot = {
     // FALLBACK
     return (
       "I’m not sure about that 🤔\n\n" +
-      "Type **/commands** to see what you can ask me."
+      "Try asking about:\n" +
+      "• Devlog\n• Projects\n• Skills\n• Experience"
     );
   },
 
@@ -56,8 +57,9 @@ const Chatbot = {
     );
   }
 };
+
 /* =========================
-   PORTFOLIO INTENTS
+   INTENTS
 ========================= */
 
 // GREETING
@@ -66,8 +68,9 @@ Chatbot.addIntent({
   triggers: ["hi", "hello", "hey"],
   examples: ["hi", "hello", "hey there"],
   response:
-    "Hey! 👋 I’m Vishesh Malik’s portfolio assistant.\n" +
-    "Ask me about skills, projects, education, or career."
+    "Hey! 👋 I’m Vishesh Malik’s portfolio assistant.\n\n" +
+    "You can ask me about Devlog, projects, skills, or experience.\n\n" +
+    "Try typing 'devlog' 👀"
 });
 
 // ABOUT
@@ -76,8 +79,33 @@ Chatbot.addIntent({
   triggers: ["who", "yourself", "about you"],
   examples: ["who are you", "tell me about yourself"],
   response:
-    "I’m Vishesh Malik, a Computer Science & Engineering student at IIMT University.\n" +
-    "I specialize in Full-Stack Development with strong DSA fundamentals."
+    "I’m Vishesh Malik, a full-stack developer and builder focused on creating real-world products.\n\n" +
+    "I’m currently building Devlog, a platform for developers, and serve as Vice President of Avishkaar, leading tech initiatives and student projects."
+});
+
+// DEVLOG (MAIN PROJECT)
+Chatbot.addIntent({
+  name: "Devlog",
+  triggers: ["devlog", "platform", "developer platform"],
+  examples: ["what is devlog", "tell me about devlog"],
+  response:
+    "Devlog is a platform I’m building for developers to share, explore, and showcase projects and ideas.\n\n" +
+    "It focuses on creating a clean and engaging space for developers to discover work and express their own.\n\n" +
+    "Check it out here:\nhttps://devlog-sand.vercel.app/"
+});
+
+// PROJECTS
+Chatbot.addIntent({
+  name: "Projects",
+  triggers: ["projects", "portfolio", "work"],
+  examples: ["projects", "your work"],
+  response:
+    "Here are some of my key projects:\n\n" +
+    "• Devlog – Developer platform (ongoing)\n" +
+    "• CineScope – Full-stack movie app\n" +
+    "• E-commerce Platform (React)\n" +
+    "• Face Recognition System (Python)\n\n" +
+    "Type 'devlog' to learn more about my main project."
 });
 
 // SKILLS
@@ -87,10 +115,11 @@ Chatbot.addIntent({
   examples: ["skills", "tech stack"],
   response:
     "Technical Skills:\n" +
-    "• Java, Python, JavaScript, C/C++\n" +
-    "• React.js, Firebase, MySQL\n" +
-    "• DSA (Java)\n" +
-    "• UI/UX (Figma)"
+    "• JavaScript, Python, Java\n" +
+    "• Next.js, React, Firebase\n" +
+    "• MySQL, REST APIs\n" +
+    "• UI/UX (Figma)\n\n" +
+    "Strong focus on building scalable web applications."
 });
 
 // FRONTEND
@@ -99,7 +128,7 @@ Chatbot.addIntent({
   triggers: ["frontend", "react", "ui"],
   examples: ["frontend", "react skills"],
   response:
-    "I build fast, responsive frontends using React.js with clean component architecture and mobile-first design."
+    "I build fast, responsive frontends using React and Next.js with clean architecture and modern UI practices."
 });
 
 // BACKEND
@@ -108,7 +137,17 @@ Chatbot.addIntent({
   triggers: ["backend", "api", "server"],
   examples: ["backend", "api work"],
   response:
-    "Backend experience includes Python logic, REST APIs, MySQL databases, and OCI cloud deployment."
+    "Backend experience includes REST APIs, database management (MySQL), and building scalable application logic."
+});
+
+// LEADERSHIP
+Chatbot.addIntent({
+  name: "Leadership",
+  triggers: ["avishkaar", "club", "leadership"],
+  examples: ["what is avishkaar", "your role"],
+  response:
+    "I serve as the Vice President of Avishkaar, the innovation club at my university.\n\n" +
+    "I lead technical initiatives, organize hackathons, and mentor students in building real-world projects."
 });
 
 // EDUCATION
@@ -117,31 +156,9 @@ Chatbot.addIntent({
   triggers: ["education", "college", "degree"],
   examples: ["education", "college"],
   response:
-    "B.Tech in Computer Science & Engineering (2023–2027)\n" +
-    "IIMT University, Meerut\n" +
-    "Core: DSA, OOP, DBMS"
-});
-
-// PROJECTS
-Chatbot.addIntent({
-  name: "Projects",
-  triggers: ["projects", "portfolio", "work"],
-  examples: ["projects", "your work"],
-  response:
-    "Major Projects:\n" +
-    "• React E-commerce Platform\n" +
-    "• Face Recognition System (Python)\n" +
-    "• IoT Smart Aquarium (80% automation)"
-});
-
-// CHATBOT
-Chatbot.addIntent({
-  name: "Chatbot Project",
-  triggers: ["chatbot"],
-  examples: ["chatbot"],
-  response:
-    "This chatbot is part of my portfolio 😄\n" +
-    "It demonstrates clean intent logic and scalable architecture."
+    "B.Tech in Computer Science & Engineering\n" +
+    "IIMT University, Meerut\n\n" +
+    "Focused on DSA, OOP, and real-world project development."
 });
 
 // CERTIFICATIONS
@@ -163,7 +180,8 @@ Chatbot.addIntent({
   triggers: ["career", "internship", "job", "hire"],
   examples: ["internship", "hire you"],
   response:
-    "I’m actively seeking Software Engineering Internships and enjoy working in Agile teams."
+    "I’m open to software engineering opportunities, collaborations, and building impactful products.\n\n" +
+    "I enjoy working on real-world projects and developer-focused platforms."
 });
 
 // CONTACT
@@ -173,7 +191,17 @@ Chatbot.addIntent({
   examples: ["contact", "email"],
   response:
     "Email: visheshmalik.dev@gmail.com\n" +
-    "LinkedIn and GitHub are available on the portfolio."
+    "You can also connect via LinkedIn and GitHub from the portfolio."
+});
+
+// CHATBOT
+Chatbot.addIntent({
+  name: "Chatbot",
+  triggers: ["chatbot"],
+  examples: ["chatbot"],
+  response:
+    "This chatbot is a custom-built feature in my portfolio.\n\n" +
+    "It uses structured intent matching and is designed to be scalable and user-friendly."
 });
 
 // THANKS
