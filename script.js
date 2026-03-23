@@ -84,7 +84,7 @@ const projectsData = {
     challenges: "Managing shared state across multiple components while maintaining performance.",
     outcome: "Strengthened React.js architecture skills and collaborative development experience.",
     links: {
-      github: alert('Code available on request or under refinement'),
+      github: null,
       liveDemo: null
     }
   },
@@ -125,7 +125,7 @@ const projectsData = {
     challenges: "Balancing real-time performance with detection accuracy.",
     outcome: "Earned GUVI certification and hands-on ML experience.",
     links: {
-      github: alert('Code available on request or under refinement'),
+      github: null,
       liveDemo: null
     }
   },
@@ -145,7 +145,7 @@ const projectsData = {
     challenges: "Ensuring reliable sensor readings and fault tolerance.",
     outcome: "Practical experience in hardware-software integration.",
     links: {
-      github: alert('Code available on request or under refinement'),
+      github: null,
       liveDemo: null
     }
   }
