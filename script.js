@@ -2,6 +2,36 @@
 // PROJECT DATA (ONLY FROM RESUME + PORTFOLIO)
 // =====================================
 const projectsData = {
+    devlog: {
+      title: "Devlog - Developer Platform",
+      icon: "bx-code-alt",
+      description: "Platform for developers to share, explore, and showcase projects and ideas.",
+      fullDescription: "Devlog is a developer-focused platform designed to help developers share their projects, explore others' work, and engage with a growing tech community. It focuses on clean UI, developer expression, and building a space where ideas and projects can be discovered easily. This is an actively evolving product with future plans for deeper community interaction and developer tools.",
+      features: [
+        "Create and share developer projects",
+        "Explore projects from other developers",
+        "Clean and minimal UI for readability",
+        "Responsive design for all devices",
+        "Focus on developer community"
+      ],
+      technologies: [
+        "Next.js",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Vercel",
+        "Prisma",
+        "Neon",
+        "Google Auth",
+        "Next Auth"
+      ],
+      challenges: "Designing a platform that balances simplicity with meaningful developer interaction while planning for scalability.",
+      outcome: "Built a real-world developer platform, gaining experience in product thinking, UI/UX decisions, and scalable architecture.",
+      links: {
+        github: "https://github.com/visheshmalik6/devlog", // update if specific repo
+        liveDemo: "https://devlog-sand.vercel.app/"
+      }
+    },
     cinescope: {
     title: "CineScope - Full-Stack Movie Discovery App",
     icon: "bx-film",
@@ -54,7 +84,7 @@ const projectsData = {
     challenges: "Managing shared state across multiple components while maintaining performance.",
     outcome: "Strengthened React.js architecture skills and collaborative development experience.",
     links: {
-      github: "https://github.com/visheshmalik6",
+      github: alert('Code available on request or under refinement'),
       liveDemo: null
     }
   },
@@ -95,7 +125,7 @@ const projectsData = {
     challenges: "Balancing real-time performance with detection accuracy.",
     outcome: "Earned GUVI certification and hands-on ML experience.",
     links: {
-      github: "https://github.com/visheshmalik6",
+      github: alert('Code available on request or under refinement'),
       liveDemo: null
     }
   },
@@ -115,7 +145,7 @@ const projectsData = {
     challenges: "Ensuring reliable sensor readings and fault tolerance.",
     outcome: "Practical experience in hardware-software integration.",
     links: {
-      github: "https://github.com/visheshmalik6",
+      github: alert('Code available on request or under refinement'),
       liveDemo: null
     }
   }
@@ -430,9 +460,9 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
 // TYPING ANIMATION
 // =====================================
 const typedTextSpan = document.querySelector(".typed-text");
-const textArray = ["Full Stack Developer", "React.js Specialist", "Python Developer", "Problem Solver", "CS Undergraduate"];
-const typingDelay = 100;
-const erasingDelay = 50;
+const textArray = ["Builder", "Full Stack Developer", "Devlog Creator", "Problem Solver"];
+const typingDelay = 80;
+const erasingDelay = 40;
 const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
